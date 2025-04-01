@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT/22/921</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Tracker</h1>
+    <div class="task-input">
+      <input type="text" id="taskName" placeholder="Enter task name">
+      <select id="taskCategory">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <div class="task-filter">
+      <label for="filterCategory">Filter by Category:</label>
+      <select id="filterCategory">
+        <option value="All">All</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+    </div>
+    <ul id="taskList"></ul>
+    <button id="clearTasksBtn">Clear All Tasks</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
